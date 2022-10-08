@@ -1,0 +1,217 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+html,body{/*한 화면에 넣기1*/
+	height:100%;
+	position:relative;
+	min-height:1000px;/*스크롤을 내려도 화면고정시키기*/
+	overflow-y:hidden;
+}
+/**************header***********/
+header{
+	height:80px;
+	width:1140px;
+	margin:0 auto;
+	position:relative;
+}
+header>h1{
+	position:absolute;
+	left:0;
+	top:18px;
+}
+header>nav{
+	position:absolute;
+}
+header>nav#gnb{
+	top:28px;
+	left:230px;
+}
+header>nav#gnb>ul{
+	overflow:hidden;
+}
+header>nav#gnb>ul>li{
+	float:left;
+	padding:0 25px;
+	border-right:2px solid #c8dbf3;
+}
+header>nav#gnb>ul>li:hover{
+	background-color: #314d71;
+	transition:0.5s;
+	}
+header>nav#gnb>ul>li>a:hover{
+	color:#fff;
+	transition:0.5s;
+}
+header>nav#gnb>ul>li:last-child {
+	border:none;
+}
+header>nav#gnb>ul>li>a{
+	display:block;
+	width:100%;
+	height:100%;
+	font-size:16px;
+	font-weight:600;
+	color:#314d71;
+}
+header>nav#lnb{
+	right:0;
+	top:28px;
+}
+header>nav#lnb>ul {
+	overflow:hidden;
+}
+header>nav#lnb>ul>li {
+	float:left;
+	margin-left:10px;
+}
+/***********section**************/
+section{
+	width:100%;
+	height:767px;
+	background-image: url('../img/back.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#b6e0f1;
+	background-size:cover;/*cover-가로꽉채우기 contain-세로값기준꽉채우기*/
+}
+section>article {
+   width:741px;
+   height:681px;
+   background-image:url('../img/content.png');
+   position:absolute;
+   right:380px;
+   top:150px;
+   z-index:10;
+}
+.motion{
+	position:absolute;
+	top:80px;
+	right:600px;
+	z-index:50;
+	animation:motion 5s infinite;
+}
+.ball{
+	top:400px;
+	left:600px;
+}
+.left{
+	left:400px;
+}
+@keyframes motion{
+	0%{
+		transform:translateY(0%);
+	}
+	50%{
+		transform:translateY(10%);
+	}
+	100%{
+		transform:translateY(0%);
+	}
+}
+section>article>div {
+	width:247px;
+	height:227px;
+	position:absolute;
+}
+section>article>div:nth-child(1) {
+	top:0;
+	right:0;
+}
+section>article>div:nth-child(2) {
+	top:227px;
+	right:247px;
+}
+section>article>div:nth-child(3) {
+	top:227px;
+	right:0;
+}
+section>article>div:nth-child(4) {
+	top:454px;
+	right:494px;
+}
+section>article>div:nth-child(5) {
+	top:454px;
+	right:247px;
+}
+section>article>div:nth-child(6) {
+	top:454px;
+	right:0;
+}
+section>article>div>a{
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:#fff;opacity:0;
+}
+section>article>div>a:hover{
+	opacity:0.4;
+}
+section>nav {
+   width:741px;
+   position:absolute;
+   right:270px;
+   top:840px;
+   z-index:10;
+}
+section ul{
+	overflow: hidden;
+}
+section li{
+	float:left;
+	border-right:1px solid #aaa;
+}
+section li>a{
+	display:block;
+	width:125px;
+	height:35px;
+	background-color:#fff;
+	font-size:12px;
+	color:#464646;
+	text-align:center;
+	line-height:35px;
+}
+section ul>li:hover a{
+	color:#fff;
+	background-color:#2e2e2e;
+}
+
+/********footer****************/
+footer{
+	padding:50px 0;
+	background-color:#146da8;
+	position:absolute;/*한 화면에 넣기2~*/
+	bottom:0;
+	left:0;
+	width:100%;/*~*/
+}
+footer>#wrap{
+	width:1100px;
+	margin:0 auto;
+	font-size:13px;
+	color:#fff;
+}
+footer>#wrap>p{
+	margin:26px 0 10px 0;
+}
+footer address{
+	opacity:0.4;
+}
+footer>#wrap>div{
+	width:149px;
+	height:21px;
+	background-color: #fff;
+	color:#000;
+	text-align: center;
+	position:absolute;
+	right:100px;
+	bottom:47px;
+	border:1px solid #373b41;
+}

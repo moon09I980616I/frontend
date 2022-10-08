@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>벨렐:::BELLEL</title>
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css" />
+<link type="text/css" rel="stylesheet" href="css/aside.css" />
+<link type="text/css" rel="stylesheet" href="css/main_responsive.css" />
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#top').hover(function(){
+			$('.submenu').stop().animate({'height':'200px','opacity':0.9},500);
+	}, 
+	function(){$('.submenu').stop().animate({'height':0,'opacity':0},500);
+});
+});
+</script>
+<script type="text/javascript" src="js/slider.js"></script>
+</head>
+<body>
+	<div id="all">
+    	<div id="mob_nav">
+      		<a href="#" class="close_btn"><img src="img/close_btn.png" alt="닫기버튼" /></a>
+      		<div class="mob_nav_wrap">
+        		<div class="log_on">
+		          	<ul>
+		            	<li><a href="#">로그인</a></li>
+		            	<li><a href="#">회원가입</a></li>
+		          	</ul>
+	        	</div>
+	        	<div class="mob_lnb">
+	          		<ul>
+	            		<li><a href="#">카테고리</a>
+	            			<ul>
+	            				<li><a href="#">립스틱</a></li>
+								<li><a href="#">립틴트</a></li>
+								<li><a href="#">립글로즈</a></li>
+								<li><a href="#">탑코드</a></li>
+								<li><a href="#">립라이너</a></li>
+								<li><a href="#">세트</a></li>
+	            			</ul>
+	            		</li>
+	            		<li><a href="#">베스트</a>
+	            			<ul>
+	            				<li><a href="#">이달의 컬러</a></li>
+	            			</ul>
+	            		</li>
+	            		<li><a href="#">이벤트</a>
+	            			<ul>
+	            				<li><a href="#">세일/쿠폰</a></li>
+								<li><a href="#">진행중</a></li>
+								<li><a href="#">종료</a></li>
+	            			</ul>
+	            		</li>
+	            		<li><a href="#">뷰티팁</a>
+	            			<ul>
+	            				<li><a href="#">연애인 뷰티</a></li>
+								<li><a href="#">트렌드메이크업</a></li>
+	            			</ul>
+	            		</li>
+	            		<li><a href="#">컬러팩토리</a>
+	            			<ul>
+	            				<li><a href="#">퍼스널 컬러 찾기</a></li>
+								<li><a href="#">메이크컬러팩토리</a></li>
+								<li><a href="#">컬러 팩토리 예약</a></li>
+								<li><a href="#">서비스 매장 보기</a></li>
+	            			</ul>
+	            		</li>
+	            	</ul>
+            	</div>
+       		</div>
+    	</div>
+	<div id="top">
+		<header>
+			<div id="header_wrap">
+				<h1><a href="#"><img src="img/logo.png" alt="로고"></a></h1>
+					<nav>
+						<ul>
+							<li><a href="#">카테고리</a></li>
+							<li><a href="#">베스트</a></li>
+							<li><a href="#">이벤트</a></li>
+							<li><a href="#">뷰티팁</a></li>
+							<li><a href="#">컬러팩토리</a></li>
+							<li><a href="#"><img src="img/search_btn.png" alt="상품검색" /></a></li>
+							<li><a href="#" class="menu_btn"><img src="img/menu_btn.png" alt="메뉴버튼" /></a></li>
+						</ul>
+					</nav>
+			</div>
+		</header>
+		<div class="submenu">
+			<nav>
+				<ul>
+					<li><a href="#">컬러 팩토리</a></li>
+					<li><a href="#">퍼스널 컬러 찾기</a></li>
+					<li><a href="#">메이크컬러팩토리</a></li>
+					<li><a href="#">컬러 팩토리 예약</a></li>
+					<li><a href="#">서비스 매장 보기</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">뷰티팁</a></li>
+					<li><a href="#">연애인 뷰티</a></li>
+					<li><a href="#">트렌드메이크업</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">세일/쿠폰</a></li>
+					<li><a href="#">진행중</a></li>
+					<li><a href="#">종료</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">베스트</a></li>
+					<li><a href="#">이달의 컬러</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">카테고리</a></li>
+					<li><a href="#">립스틱</a></li>
+					<li><a href="#">립틴트</a></li>
+					<li><a href="#">립글로즈</a></li>
+					<li><a href="#">탑코드</a></li>
+					<li><a href="#">립라이너</a></li>
+					<li><a href="#">세트</a></li>
+					<!--<li><a href="#">매트</a></li>
+					<li><a href="#">쉬어</a></li>
+					<li><a href="#">새틴</a></li>
+					<li><a href="#">볼륨감</a></li>
+					<li><a href="#">글리터</a></li>
+					<li><a href="#">롱래쉬</a></li>-->	
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="mainvisual_wrap">
+		<div class="imgslide">
+			<a href="#">
+				<div class="imgbox1 visualbox">
+				</div>
+			</a>
+			<a href="#">
+				<div class="imgbox2 visualbox">
+					<div class="discript">
+						<h1>NEW PRODUCT</h1>
+						<p>MATT LIP COLOR #221</p>
+					</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="imgbox3 visualbox">
+					<div class="discript">
+						<h1>LIMITED</h1>
+						<p>온라인 단독구성<br />한정세트</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<section id="bestitem">
+		<div class="content_wrap">
+			<h2 class="cont_title">BEST ITEM</h2>
+			<div class="box">
+            <article>
+               <img src="img/best1.png" alt="제품1" />
+               <a href="#">
+                  <p>LOVE VELVET LIP</p>
+                  <span>16,000원</span>
+               </a>
+            </article>
+            <article>
+               <img src="img/best2.png" alt="제품2" />
+               <a href="#">
+                  <p>DANGEROUS MATTE LIP</p>
+                  <span>13,000원</span>
+               </a>
+            </article>
+            <article>
+               <img src="img/best3.png" alt="제품3" />
+               <a href="#">
+                  <p>MOOD RECIPE MATTE LIP</p>
+                  <span>23,000원</span>
+               </a>
+            </article>
+            <article>
+               <img src="img/best4.png" alt="제품4" />
+               <a href="#">
+                  <p>#118 MATTE LIP</p>
+                  <span>14,000원</span>
+               </a>
+            </article>
+         </div>
+		</div>
+	</section>
+	<section id="about">
+    	<div class="about_wrap">
+      		<h2>BELLEL GUIDE</h2>
+      		<p>지속과 발색이 찰떡!<br />바르기만하면 인생샷을 건질 수 있는 BELLEL!<br />이세상 아닌 색들만 고르고 골라<br />존예보스 만들어 줄 뷰티회사 직원들의<br /> 최애 립스틱!<br />고가의 제품들도 따라오지 못하는<br /> 발색력을 경험 해 보세요!</p>
+      		<a href="#">자세히보기</a>
+    	</div>
+    </section>
+ 	<section id="foreign">
+ 		<h2 class="cont_title">배송안내</h2>
+ 		<ul>
+ 			<li><img src="img/paper.png" alt="주문서작성"><span>주문서 작성</span></li>
+ 			<li><img src="img/card.png" alt="주문/결제"><span>주문/결제</span></li>
+ 			<li><img src="img/car.png" alt="상품준비 및 배송"><span>상품준비 및 배송</span></li>
+ 			<li><img src="img/delivery.png" alt="도착"><span>도착</span></li>
+ 		</ul>
+ 	</section>
+ 	<article id="items">
+ 		<a href="#"><img src="img/hot_items.png"></a>
+ 	</article>
+ 	<section id="review">
+ 		<h2 class="cont_title">REVIEW</h2>
+ 		<ul>
+ 			<li>
+ 				<img src="img/review1.png" alt="후기1">
+ 			</li>
+ 			<li>
+ 				<p>구매자 : 4186075***</p>
+ 				<p>구매상품 :<a href="#">MOOD RECIPE MATTE LIP COLOR #221</a></p>
+ 				<p>웜톤한테 찰떡! 이뻐용<br />전 사진보다 핑크끼는 살짝 없게 느껴졌어요!<br />딱 톤다운된 레드브라운코랄......<br />발색 짱짱잘되고 블렌딩도 잘되여!</p>
+ 			</li>
+ 		</ul>
+ 		<ul>
+ 			<li>
+ 				<p>구매자 : 2140021***</p>
+ 				<p>구매상품 :<a href="#">MATTE LIP COLOR #118</a></p>
+ 				<p>그냥 레드라고 하기엔 어딘가 오묘한<br />정말 브라운 한방울 들어간 로즈색인데<br />진하게 바르는거랑 펴바르는거랑 느낌이 달라요.<br />립스틱 많이샀지만 이 색이 정말 손꼽을만큼 이뻐요.</p>
+ 			</li>
+ 			<li>
+ 				<img src="img/review2.png" alt="후기2">
+ 			</li>
+ 		</ul>
+ 	</section>
+ 	<section id="event">
+ 		<img src="img/event.png" alt="이벤트">
+ 	</section>
+ 	<section id="video_wrap">
+ 		<iframe id="video" width="50%" height="550" src="https://www.youtube.com/embed/o3ap2N_WFQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 	</section>
+ 	<section id="delivery">
+ 		<h2 class="cont_title">배송 조회 하기</h2>
+ 		<ul>
+ 			<li>
+ 				<form>
+ 					<label>주문번호로 조회</label>
+ 					<input type="text" name="custom_num" value="" />
+ 					<input type="submit" name="custom_num" value="조회" />
+ 				</form>
+ 			</li>
+ 			<li>
+ 				<form>
+ 					<label>운송장번호로 조회</label>
+ 					<input type="text" name="waybill" value="" />
+ 					<input type="submit" name="waybill" value="조회" />
+ 				</form>
+ 			</li>
+ 		</ul>
+ 	</section>
+ 	<section id="exchange">
+ 		<h2 class="cont_title">교환 및 반품안내</h2>
+ 		<div>
+ 			<img src="img/exchange.png" alt="교환 및 반품안내">
+ 		</div>
+ 	</section>
+ 	<section id="cs_center">
+ 		<div class="customer_center">
+ 			<h2>CUSTOMER CENTER</h2>
+ 			<div>line</div>
+ 			<p>늘 고객님의 편에서 고객님의 생각으로 귀 기울이겠습니다.</p>
+ 			<ul>
+ 				<li><a href="#">자주묻는 질문</a></li>
+ 				<li><a href="#">공지사항</a></li>
+ 			</ul>
+ 			<article>
+ 				<div>
+ 					<p>고객상담센터</p>
+ 					<a href="tel:1588-8282">1588-8282</a>
+ 				</div>
+ 				<ul>
+ 					<li>cscenter@bellel.com</li>
+ 					<li>평일 : 10 : 00 ~ 17 : 00</li>
+ 					<li>점심 : 12 : 00 ~ 13 : 00</li>
+ 					<li>휴무 : 주말, 공휴일</li>
+ 				</ul>				
+ 			</article>
+ 		</div>
+ 		<div class="qna">
+ 			<h2 class="cont_title">1:1문의하기</h2>
+ 			<form>
+ 				<input type="text" value="name" name="name" id="name" />
+ 				<input type="text" value="Email address" name="email" />
+ 				<input type="text" value="phone" name="phone" />
+ 				<input type="text" value="Message" name="message" />
+ 				<input type="submit" value="문의 전송" />
+ 			</form>
+ 		</div>
+ 		<div class="movebox1">
+ 			<img src="img/l_lip.png" alt="립스틱l" />
+ 		</div>
+ 		<div class="movebox2">
+ 			<img src="img/r_lip.png" alt="립스틱r" />
+ 		</div>
+ 	</section>
+ 	<section id="location">
+ 	</section>
+ 	<script>
+  // Initialize and add the map
+  function initMap() {
+	// The location of Uluru
+	var uluru = {lat: 35.8205434, lng: 127.1431864};
+	// The map, centered at Uluru
+	var map = new google.maps.Map(
+	document.getElementById('location'), {zoom: 15, center: uluru});
+	// The marker, positioned at Uluru
+	var marker = new google.maps.Marker({position: uluru, map: map});
+ 	}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ18lF8N_AgjyeUAGtJL2dG4IXxvLZCrk&callback&callback=initMap">
+    </script>
+ 	<footer>
+    <h2><a href="#"><img src="img/footer_logo.png" alt="로고" /></a></h2>
+    <ul>
+      <li><a href="#">개인정보 취급방침</a></li>
+      <li>|</li>
+      <li>개인정보보호책임자 : 김문영</li>
+      <li>|</li>
+      <li>통신판매업신고번호 : 2019-전북전주-0000</li>
+    </ul>
+    <p>상호명 : (주)BELLEL    대표자 : 김문영   사업자등록번호 : 123-45-67890   대표번호 : 1588-8282 주소 : 전북 전주시 효자동 550-63</p>
+    <address>copyright (주)BELLEL all right reserved.</address>
+  </footer>
+  <div class="top_btn">
+  	<img src="img/top.png" alt="맨 위로" />
+  </div>
+   <div id="popup">
+	<p>
+		<input type="checkbox" id="close24" name="close24" value="close24" />
+		<label for="close24">하루동안 열지않기</label>
+		<input type="checkbox" id="close1" name="close1" value="close1" />
+		<label for="close1">닫기</label>
+	</p>
+  </div>
+<script type="text/javascript" src="js/aside.js"></script>
+</body>
+</html>

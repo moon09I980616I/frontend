@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+#wrap{width: 100%;}
+#header{width: 100%; height: 147px; position: absolute; top: 0; left: 0; z-index: 300;}
+#headerIn{width: 1200px; height: 147px; margin: 0 auto; position: relative;}
+.logo{padding-top: 50px;}
+
+#mainVideo .mv{width: 100%; height: 768px; background: url(../images/ms_bg.jpg) no-repeat center 0/cover;}
+
+.gnbetc{position: absolute; top: 15px; right: 0;}
+.gnbetc li{float: left;}
+.gnbetc li a{display: block; color: #fff; margin-left: 10px; padding-left: 10px; border-left: 1px solid #fff; line-height: 10px;}
+.gnbetc li:first-child a{border-left: 0;}
+.gnbetc li:hover{font-weight: bold;}
+
+
+.search{width: 80px; border-bottom: 1px solid #fff; position: absolute; top: 62px; right: 0px; transition: all 0.5s;}
+.search input{width: 100px; height: 28px; background: none; border: none; color: #fff;}
+.intxt1::-webkit-input-placeholder{color: rgb(255, 255, 255,0.7);}
+/*기본텍스트 색상을 변경하기 위해 벤더프리픽스를 적용*/
+
+.search .submit{display: block; width: 20px; height: 20px; text-indent: -9999px; background-image: url(../images/search.png); background-repeat: no-repeat; position: absolute; top: 4px; right: 0;}
+.search:hover{width: 130px;}
+.search:hover .submit{background-position: 0 -38px;}
+
+
+.gnb{position: absolute; top: 55px; left: 328px; width: 595px; height: 20px;}
+.gnb li .m{float: left; line-height: 22px;}
+.depth1 li .d1:last-child{margin-right: 0;}
+
+.gnb .depth1{width: 100%; height: 60px; position: relative;text-shadow: 2px 1px 2px grey}
+.gnb .depth1 .d1{float: left; position: relative;}
+/*메인메뉴*/
+
+.gnb .depth1 .d1 .m{color: #fff; font-size: 16px; font-family: 'Lato', sans-serif; margin: 0 48px 20px 0;} /*메인메뉴 li a*/
+
+.gnb .depth1 .d1 .sub{width: 150px; position: absolute; left: 5px; top: 40px; z-index: 300; display: none; height: 200px;}
+
+.gnb .depth1 .d1 .sub li{margin-bottom: 5px;}
+.gnb .depth1 .d1 .sub li a{color: #fff; transition: all 0.3s;}
+.gnb .depth1 .d1 .sub li a:hover{opacity: 0.5;}
+
+
+
+/*메인슬라이더 영역*/
+.slider{width: 1200px; margin: 0 auto; position: absolute; top: 147px; left: 50%; margin-left: -600px; box-shadow: 0 8px 16px rgba(0,0,0,0.5);}
+
+.slider li a{display: block; width: 1200px; height: 666px; text-indent: -9999px; background-repeat: no-repeat; background-position: center 0; background-size: cover;}
+.slider .s1 a{background-image: url(../images/ms1.jpg);}
+.slider .s2 a{background-image: url(../images/ms2.jpg);}
+.slider .s3 a{background-image: url(../images/ms3.jpg);}
+.slider .s4 a{background-image: url(../images/ms4.jpg);}
+.slider .s5 a{background-image: url(../images/ms5.jpg);}
+.slider .s6 a{background-image: url(../images/ms6.jpg);}
+.slider .s7 a{background-image: url(../images/ms7.jpg);}
+
+
+.slider .bx-controls-direction{position: absolute; top:45%; left: 0; width: 100%; transform: translateY(-50%);} 
+                             
+.slider .bx-controls-direction a{display: block; width: 26px; height: 50px; text-indent: -9999px; position:absolute; top:0;}                                          
+.slider .bx-controls-direction .bx-prev{left: 3%; background:url(../images/btn_slides_prev.png) no-repeat;}   
+    
+.slider .bx-controls-direction .bx-next{right: 3%; background:url(../images/btn_slides_next.png) no-repeat;}   
+
+.msTxt h3{position: absolute; top: 350px; left: 185px; color: #fff; font-size: 16px; font-weight: normal;}
+
+/*메인로우1*/
+.mainRow1{width: 1200px; margin: 150px auto 80px;}
+.title{font-size: 18px; font-family: 'Lato', sans-serif; font-weight: normal; margin-bottom: 30px;}
+.mainRow1 h3:after{content: ""; display: inline-block; vertical-align: middle; width: 20px; height: 2px; background: #555; margin: 0 12px 0 3px;}
+
+.mainRow1 li{float: left;}
+.mainRow1 .photo{margin-right: 20px; position: relative;}
+.mainRow1 .photo .on{position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s;}
+.mainRow1 .photo:hover .on{opacity: 1;}
+
+.mainRow1 .more a{display: block; width: 130px; height: 40px; border: 2px solid #203936; margin: 0 auto; text-align: center; line-height: 40px; color: #203936; margin-top: 120px; margin-left: 45px; transition: all 0.3s;}
+.mainRow1 .more a span{display: none;}
+.mainRow1 .more a:hover{background: #203936; color: #fff;}
+
+.mainRow1 .prTxt{margin: 20px 0;}
+.mainRow1 .prTxt p{margin-bottom: 3px;}
+.mainRow1 .prTxt .des{color: #777;  font-family: 'Lato', sans-serif;}
+.mainRow1 .prTxt .name{color: #444; font-weight: bold;}
+.mainRow1 .prTxt .price{font-size: 16px; line-height: 26px; }
+
+.mainRow1 .prTxt span{display: block; width: 13px; height: 13px; background: #fff; float: left; border-radius: 13px; border: 1px solid #ccc; margin-right: 3px;}
+.mainRow1 .prTxt .ivo{background: #ecece4;}
+.mainRow1 .prTxt .nav{background: #1a2247;}
+.mainRow1 .prTxt .bk{background: #000;}
+.mainRow1 .prTxt .red{background: #d4283c;}
+.mainRow1 .prTxt .grn{background: #2b5945;}
+.mainRow1 .prTxt .noc{font-size: 10px; color: #777;}
+
+/*메인로우2*/
+.mainRow2{width: 1200px; margin: 0 auto 80px; margin-bottom: 100px;}
+.mainRow2 .mTit{font-size: 22px; font-family: 'Lato', sans-serif; color: #444; font-weight: normal; margin-bottom: 50px;}
+.mainRow2 .mTit:before,
+.mainRow2 .mTit:after{content: ""; display: inline-block; width: 410px; height: 2px; background: #ccc; margin: 5px 20px 5px 35px;}
+
+
+.mainRow2 li{float: left; margin-right: 12px; position: relative;}
+.mainRow2 li:last-child{margin-right: 0;}
+
+.mainRow2 li .over{width: 392px; height: 146px; background: rgba(0, 0, 0,0.5) no-repeat; position: absolute; top: 0; left: 0; color: #fff; text-align: center; padding-top: 140px; opacity: 0; transition: all 0.8s;}
+
+.mainRow2 li:hover .over{opacity: 1;}
+.mainRow2 .neTxt{width: 392px; text-align: center; padding-top: 30px; }
+.mainRow2 .neTxt p{margin-bottom: 3px; cursor: pointer;}
+.mainRow2 .neTxt .maint{font-size: 16px; margin-bottom: 10px;}
+
+.news li .line{width: 60px; height: 2px; margin: 0 auto;}
+.news li .line .bc{display: block; width: 100%; height: 100%; background: #1a2247; transform: scaleX(0); transition: all 0.3s;}
+.news li:hover .line .bc{transform: scaleX(1);}
+
+/*메인로우3*/
+.mainRow3{width: 1200px; margin: 0 auto 80px;}
+.mainRow3 .title{font-size: 18px; font-family: 'Lato', sans-serif; font-weight: normal; margin-bottom: 30px;}
+.mainRow3 h3:after{content: ""; display: inline-block; vertical-align: middle; width: 20px; height: 2px; background: #555; margin: 0 12px 0 3px;}
+
+.mainRow3 li{float: left; margin-right: 12px; position: relative;}
+.mainRow3 li:last-child{margin-right: 0;}
+.mainRow3 .neTxt{position: absolute; bottom: 90px; left: 23px;}
+.mainRow3 .neTxt p{color: #fff; margin-top: 5px;}
+.mainRow3 .neTxt .subt{font-size: 30px; font-weight: bold; font-family: 'Lato', sans-serif;}
+
+.mainRow3 .neTxt2{position: absolute; top: 23px; left: 23px;}
+.mainRow3 .neTxt2 p{color: #fff; margin-top: 5px;}
+.mainRow3 .neTxt2 .subt{font-size: 30px; font-weight: bold; font-family: 'Lato', sans-serif;}
+
+.coll{position: relative;}
+.coll .over{width: 594px; height: 455px; position: absolute; top: 0; left: 0;}
+/*공통값*/
+.coll .over span{display: inline-block; background: #69171b; position: absolute; transition: all 0.7s;}
+.coll li:nth-child(2) span{background: #172246;}
+/*개별값*/
+.coll .over .bt{width: 0; height: 10px; top: 0; left: 0;}
+.coll .over .br{width: 10px; height: 0; top: 0; right: 0;}
+.coll .over .bb{width: 0; height: 10px; right: 0; bottom: 0;}
+.coll .over .bl{width: 10px; height: 0; left: 0; bottom: 0;}
+/*마우스하버시*/
+.coll li:hover .over .bt{width: 100%;}
+.coll li:hover .over .br{height: 100%;}
+.coll li:hover .over .bb{width: 100%;}
+.coll li:hover .over .bl{height: 100%;}
+
+/*메인로우4*/
+.mainRow4{width: 1200px; margin: 0 auto 80px; position: relative;}
+.mainRow4 .mTit{font-size: 22px; font-family: 'Lato', sans-serif; color: #444; font-weight: normal; margin-bottom: 140px;}
+.mainRow4 .mTit:before,
+.mainRow4 .mTit:after{content: ""; display: inline-block; width: 410px; height: 2px; background: #ccc; margin: 5px 60px 5px 60px;}
+.mainRow4 .lookbg{width: 1200px; height: 403px; background: url(../images/cont4_bg.jpg) no-repeat center 0;}
+
+.mainRow4 li{float: left; position: relative;}
+.mainRow4 .photo{position: absolute; top: 65px; right: 0px;}
+.mainRow4 .photo .on{position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 3s;}
+.mainRow4 .photo li:hover .on{opacity: 1;}
+
+.mainRow4 .more{position: absolute; left: 50px; bottom: 45px;}
+.mainRow4 .more a{display: block; width: 130px; height: 40px; border: 2px solid #203936; text-align: center; line-height: 40px; color: #203936; transition: all 0.3s;}
+.mainRow4 .more a span{display: none;}
+.mainRow4 .more a:hover{background: #203936; color: #fff;}
+
